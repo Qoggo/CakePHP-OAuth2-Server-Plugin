@@ -70,12 +70,7 @@ class OAuth2Component extends Object {
 	 *   an exception if user is not authenticated. Default is TRUE.
 	 * @return Integer Current User.id
 	 */
-	 //FIXME|alex|160811
-	 //oauth2 tmp disabled so I can continue working on github features
 	function getCurrentUserId($throwExceptionOnFail = true) {
-		return 2;
-	}
-	/*function getCurrentUserId($throwExceptionOnFail = true) {
 		// validate and cache to reduce db queries
 		static $current_user_id = null;
 		if (empty($_REQUEST['access_token'])) { // validate
@@ -96,5 +91,5 @@ class OAuth2Component extends Object {
 			throw new Exception(__('Invalid or expired access_token.', true));
 			return false;
 		}
-	}*/
+	}
 }
