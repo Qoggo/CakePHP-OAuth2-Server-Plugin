@@ -8,7 +8,7 @@ $config['OAuth2Server'] = array(
 	'Auth' => array(
 		'className' => 'QoggoAuth',
 		'fields' => array(
-			'username' => 'email',
+			'username' => 'facebook_id',
 			'password' => 'password'
 		)
 	)
